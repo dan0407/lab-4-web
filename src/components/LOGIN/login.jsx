@@ -1,14 +1,18 @@
 import React from 'react';
-import { Button, Typography } from '@mui/material';
+import { Button, TextField, Container } from '@mui/material';
+import './login.css';
 
 const Login = ({ onLogin }) => {
-  return (
-    <div>
-      <Typography variant="h4">Acceso Denegado</Typography>
-      <Typography>Necesitas estar autenticado para ver esta página.</Typography>
-      <Button variant="contained" onClick={onLogin}>Iniciar sesión</Button>
-    </div>
-  );
+	return (
+		<Container>
+			<h2>Iniciar Sesión</h2>
+			<TextField label='Usuario' fullWidth margin='normal' />
+			<TextField label='Contraseña' type='password' fullWidth margin='normal' />
+			<Button variant='contained' color='primary' onClick={onLogin}>
+				Iniciar Sesión
+			</Button>
+		</Container>
+	);
 };
 
 export default Login;

@@ -1,0 +1,33 @@
+/* General container for the Home page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e3f2fd;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Typography styles */
+.home-container h4 {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.home-container .MuiButton-contained {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.home-container .MuiButton-contained:hover {
+  background-color: #1565c0;
+}
